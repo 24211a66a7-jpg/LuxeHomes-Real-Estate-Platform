@@ -4,6 +4,8 @@
 
 <h1 align="center">🏠 LuxeHomes Real Estate Platform</h1>
 
+<h2 align="center">Demo : https://real-estate-platform3.lovable.app </h2>
+
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React"/>
   <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
@@ -194,11 +196,11 @@ flowchart LR
 
 | Color | Hex | HSL | Usage |
 |-------|-----|-----|-------|
-| ![#0A1628](https://via.placeholder.com/20/0A1628/0A1628?text=+) Navy | `#0A1628` | `220 60% 10%` | Primary background |
-| ![#1a2a4a](https://via.placeholder.com/20/1a2a4a/1a2a4a?text=+) Navy Light | `#1a2a4a` | `220 50% 20%` | Secondary background |
-| ![#D4AF37](https://via.placeholder.com/20/D4AF37/D4AF37?text=+) Gold | `#D4AF37` | `45 65% 52%` | Primary accent |
-| ![#E8D5A3](https://via.placeholder.com/20/E8D5A3/E8D5A3?text=+) Gold Light | `#E8D5A3` | `45 55% 77%` | Secondary accent |
-| ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/FFFFFF?text=+) White | `#FFFFFF` | `0 0% 100%` | Text on dark |
+|  Navy | `#0A1628` | `220 60% 10%` | Primary background |
+|  Navy Light | `#1a2a4a` | `220 50% 20%` | Secondary background |
+|  Gold | `#D4AF37` | `45 65% 52%` | Primary accent |
+|  Gold Light | `#E8D5A3` | `45 55% 77%` | Secondary accent |
+|  White | `#FFFFFF` | `0 0% 100%` | Text on dark |
 
 ---
 
@@ -316,5 +318,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-Lovable-D4AF37?style=for-the-badge" alt="Made with Intelligence"/>
+  <img src="https://img.shields.io/badge/Made%20with-Intelligence-D4AF37?style=for-the-badge" alt="Made with Intelligence"/>
 </p>
