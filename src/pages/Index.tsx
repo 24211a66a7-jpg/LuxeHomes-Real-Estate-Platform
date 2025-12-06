@@ -9,84 +9,68 @@ import heroImage from "@/assets/hero-banner.jpg";
 import property1 from "@/assets/property-1.jpg";
 import property2 from "@/assets/property-2.jpg";
 import property3 from "@/assets/property-3.jpg";
-
 const Index = () => {
-  const featuredProperties = [
-    {
-      id: "1",
-      title: "Luxury Modern Villa",
-      price: "$1,250,000",
-      location: "Beverly Hills, CA",
-      image: property1,
-      beds: 4,
-      baths: 3,
-      sqft: 3200,
-    },
-    {
-      id: "2",
-      title: "Contemporary Apartment",
-      price: "$650,000",
-      location: "Downtown, NY",
-      image: property2,
-      beds: 2,
-      baths: 2,
-      sqft: 1800,
-    },
-    {
-      id: "3",
-      title: "Mediterranean Estate",
-      price: "$2,100,000",
-      location: "Malibu, CA",
-      image: property3,
-      beds: 5,
-      baths: 4,
-      sqft: 4500,
-    },
-  ];
-
-  const features = [
-    {
-      icon: Shield,
-      title: "Trusted & Secure",
-      description: "Verified properties with secure transactions and complete legal documentation.",
-    },
-    {
-      icon: Award,
-      title: "Award Winning",
-      description: "Recognized excellence in real estate service with industry-leading awards.",
-    },
-    {
-      icon: Users,
-      title: "Expert Team",
-      description: "Professional agents with extensive market knowledge and negotiation skills.",
-    },
-    {
-      icon: Clock,
-      title: "24/7 Support",
-      description: "Round-the-clock assistance for all your property needs and inquiries.",
-    },
-    {
-      icon: Star,
-      title: "5-Star Service",
-      description: "Exceptional customer satisfaction with personalized property solutions.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Market Insights",
-      description: "Data-driven market analysis to help you make informed property decisions.",
-    },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const featuredProperties = [{
+    id: "1",
+    title: "Luxury Modern Villa",
+    price: "$1,250,000",
+    location: "Beverly Hills, CA",
+    image: property1,
+    beds: 4,
+    baths: 3,
+    sqft: 3200
+  }, {
+    id: "2",
+    title: "Contemporary Apartment",
+    price: "$650,000",
+    location: "Downtown, NY",
+    image: property2,
+    beds: 2,
+    baths: 2,
+    sqft: 1800
+  }, {
+    id: "3",
+    title: "Mediterranean Estate",
+    price: "$2,100,000",
+    location: "Malibu, CA",
+    image: property3,
+    beds: 5,
+    baths: 4,
+    sqft: 4500
+  }];
+  const features = [{
+    icon: Shield,
+    title: "Trusted & Secure",
+    description: "Verified properties with secure transactions and complete legal documentation."
+  }, {
+    icon: Award,
+    title: "Award Winning",
+    description: "Recognized excellence in real estate service with industry-leading awards."
+  }, {
+    icon: Users,
+    title: "Expert Team",
+    description: "Professional agents with extensive market knowledge and negotiation skills."
+  }, {
+    icon: Clock,
+    title: "24/7 Support",
+    description: "Round-the-clock assistance for all your property needs and inquiries."
+  }, {
+    icon: Star,
+    title: "5-Star Service",
+    description: "Exceptional customer satisfaction with personalized property solutions."
+  }, {
+    icon: TrendingUp,
+    title: "Market Insights",
+    description: "Data-driven market analysis to help you make informed property decisions."
+  }];
+  return <div className="min-h-screen bg-background">
       <Navbar />
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }}>
           <div className="absolute inset-0 bg-navy/50"></div>
         </div>
         
@@ -103,7 +87,7 @@ const Index = () => {
               <Link to="/properties">Browse Properties</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-navy">
-              <Link to="/contact">Contact Agent</Link>
+              <Link to="/contact" className="text-accent">Contact Agent</Link>
             </Button>
           </div>
         </div>
@@ -120,9 +104,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            {featuredProperties.map((property) => (
-              <PropertyCard key={property.id} {...property} />
-            ))}
+            {featuredProperties.map(property => <PropertyCard key={property.id} {...property} />)}
           </div>
           
           <div className="text-center">
@@ -144,8 +126,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="text-center shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+            {features.map((feature, index) => <Card key={index} className="text-center shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
                 <CardContent className="p-6">
                   <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-8 h-8 text-white" />
@@ -153,15 +134,12 @@ const Index = () => {
                   <h3 className="text-xl font-semibold text-navy mb-3">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
