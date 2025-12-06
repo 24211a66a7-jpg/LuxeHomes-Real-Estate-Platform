@@ -316,11 +316,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-Lovable-D4AF37?style=for-the-badge" alt="Made with Lovable"/>
-</p>
-
-<p align="center">
-  <a href="https://lovable.dev/projects/98a9612e-fac5-4ee3-8c51-563e4dfa9948">
-    <img src="https://img.shields.io/badge/Edit%20in-Lovable-0A1628?style=for-the-badge" alt="Edit in Lovable"/>
-  </a>
+  <img src="https://img.shields.io/badge/Made%20with-Lovable-D4AF37?style=for-the-badge" alt="Made with Intelligence"/>
 </p>
